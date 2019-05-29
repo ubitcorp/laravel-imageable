@@ -1,1 +1,1 @@
-# laravel-imageable
+## UbitCorp Laravel Imageable

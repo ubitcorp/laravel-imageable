@@ -1,0 +1,36 @@
+{
+    "name": "ubitcorp/laravel-imageable",
+    "description": "It provides an imagable model that can be used with trait on any model for Laravel project",
+    "keywords": ["ubitcorp", "laravel-imageable", "imageable", "hasan civelek"],
+    "license": "MIT",
+    "homepage": "https://github.com/ubitcorp/laravel-imageable",
+    "authors": [{
+        "name": "Hasan Civelek",
+        "email": "hasan@ubit.com.tr",
+        "role": "Developer"
+    }],
+    "require": {
+        "php": "~7.1",
+        "illuminate/support": "5.5.x|5.6.x|5.7.x|5.8.x"
+    },
+    "autoload": {
+        "psr-4": {
+            "UbitCorp\\Settings\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "UbitCorp\\Settings\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "UbitCorp\\Imageable\\ServiceProvider"
+            ],
+            "aliases": {
+                "Imeageable": "UbitCorp\\Imageable\\Facade"
+            }
+        }
+    }
+}

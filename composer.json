@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "UbitCorp\\Settings\\": "src/"
+            "UbitCorp\\Imageable\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "UbitCorp\\Settings\\": "tests"
+            "UbitCorp\\Imageable\\": "tests"
         }
     },
     "extra": {

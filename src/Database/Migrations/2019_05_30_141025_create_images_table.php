@@ -12,8 +12,8 @@ class CreateImagesTable extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::create(config('imageble.model'), function (Blueprint $table) {
+    {       
+        Schema::create(config('imageable.model'), function (Blueprint $table) {
             $table->increments('id');
             $table->string('model_type');
             $table->unsignedBigInteger('model_id');            
@@ -31,6 +31,6 @@ class CreateImagesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists(config('imageble.model'));        
+        Schema::dropIfExists(config('imageable.model'));        
     }
 }

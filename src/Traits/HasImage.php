@@ -23,9 +23,7 @@ trait HasImage
         );
     }
 
-    /**
-     * Add a setting by keyword and value 
-     *  */     
+    /*
     public function addSetting($keyword, $value)
     {
         $keyword = trim($keyword);
@@ -75,10 +73,7 @@ trait HasImage
 
       $this->load('settings');
     }    
-
-    /**
-     *  Delete all existing settings for model and add new ones.
-     */
+ 
     
     public function syncSettings($settings){
       if(!is_array($settings))
@@ -106,6 +101,8 @@ trait HasImage
           return array_map("trim",explode(",",$this->valueOfSetting($keyword)));
         
        return null;
-    }    
+    }   
+    
+    */
 
 }

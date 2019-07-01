@@ -12,7 +12,7 @@ trait HasImage
         return $this->morphOne(
             \UbitCorp\Imageable\Entities\Image::class,
             'model'
-        )->orderBy('order');
+        )->orderBy('order','desc');
     }
 
     public function images(): MorphMany
@@ -20,7 +20,7 @@ trait HasImage
         return $this->morphMany(
             \UbitCorp\Imageable\Entities\Image::class,
             'model'
-        );
+        )->orderBy('order','desc');
     }
     
 
